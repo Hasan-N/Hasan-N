@@ -1,0 +1,12 @@
+.poetinfo{width:200px; border: 1px dotted #000; position:fixed;  right:1px; top:100;}
+.poetinfo img{width:150px; height:150px; box-shadow: 4px 4px 8px black; transition:1.5s; margin: 10px 0px 10px 0px;}
+.poetinfo img:hover{width:170px; height:170px; box-shadow: 8px 8px 16px gray;  margin:0px 0px 0px 0px; }
+.poetinfo h2{font-size: 21;}
+.poetinfo h4{font-size:15; margin:0px;}
+.poetinfo marquee{margin: 10px 5px;}
+.poetinfo P{font-family: courier new; font-size:14}
+
+.thepoem{overflow:auto; margin: 0px 200px 0px 0px}
+.thepoem H1 {font-size:30; font-family:arial; text-align:center; color:red; text-shadow: 5px 5px 8px gray;}
+.thepoem H2 {font-size:22; text-align:right; color:blue; text-shadow: 3px 3px 5px gray; }
+.thepoem P {font-size:16; text-align:center; font-family:candara,copperplate gothic, courier; }

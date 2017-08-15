@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+<SCRIPT language=VBScript>
+Sub abc()
+
+a= date
+b= year(a) 
+c= dateserial(b,1,1)
+i=datediff("d",c,a)
+x=i mod 13
+
+If x=0 then
+document.write("<embed src=../ws/shall_i_compare.html height=100% width=100%>")
+
+elseif x=1 then
+document.write("<embed src=../ws/is_it_for.html height=100% width=100%>")
+
+elseif x=2 then
+document.write("<embed src=../ws/not_marble_nor.html height=100% width=100%>")
+
+elseif x=3 then
+document.write("<embed src=../ws/when_i_consider.html height=100% width=100%>")
+
+elseif x=4 then
+document.write("<embed src=../jk/ode_to_nightinagle.html height=100% width=100%>")
+
+elseif x=5 then
+document.write("<embed src=../jk/ode_to_autumn.html height=100% width=100%>")
+
+elseif x=6 then
+document.write("<embed src=../jk/when_i_have.html height=100% width=100%>")
+
+elseif x=7 then
+document.write("<embed src=../jk/bright_star.html height=100% width=100%>")
+
+elseif x=8 then
+document.write("<embed src=../rf/stopping_by_woods.html height=100% width=100%>")
+
+elseif x=9 then
+document.write("<embed src=../rf/the_road_not.html height=100% width=100%>")
+
+elseif x=10 then
+document.write("<embed src=../at/a_farewell.html height=100% width=100%>")
+
+elseif x=11 then
+document.write("<embed src=../at/crossing_the_bar.html height=100% width=100%>")
+
+else
+document.write("<embed src=../at/the_brook.html height=100% width=100%>")
+End if
+
+End Sub
+</SCRIPT>
+</HEAD>
+<BODY onload=abc()>
+<CENTER><H1>
+Please use Internet Explorer and/or allow blocked content (scripts). 
+</H1></CENTER>
+</BODY>
+</HTML>

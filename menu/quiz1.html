@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<SCRIPT language=vbscript>
+Sub abc()
+Dim i
+If q1(0).checked then
+i=i+20
+End If
+
+If q2(1).checked then
+i=i+20
+End If
+
+If q3(0).checked then
+i=i+20
+End If
+
+If q4(2).checked then
+i=i+20
+End If
+
+If q5(3).checked then
+i=i+20
+End If
+
+Msgbox("You have scored " & i & "% score.")
+End Sub
+</script>
+</HEAD>
+
+<BODY>
+1. When was William Shakespeare born?<br>
+<INPUT type=radio name=q1 class=correct> 26th April 1564 <br>
+<INPUT type=radio name=q1> 23rd April 1616<br>
+<INPUT type=radio name=q1> 26th April 1564<br>
+<INPUT type=radio name=q1> 26th April 1616 <br><br>
+
+2. Who wrote the poem "Bright star"?<br>
+<INPUT type=radio name=q2> William Shakespeare<br>
+<INPUT type=radio name=q2 class= correct> John Keats<br>
+<INPUT type=radio name=q2> Robert Frost<br>
+<INPUT type=radio name=q2> Alfred Tennyson<br><br>
+
+3. When was Robert Frost born?<br>
+<INPUT type=radio name=q3 class=correct> 26th March 1874<br>
+<INPUT type=radio name=q3> 26th April 1874<br>
+<INPUT type=radio name=q3> 26th March 1864<br>
+<INPUT type=radio name=q3> 26th April 1864<br><br>
+
+4. How many sonnets has William Shakespeare written?<br>
+<INPUT type=radio name=q4>144<br>
+<INPUT type=radio name=q4>134<br>
+<INPUT type=radio name=q4 class=correct>154<br>
+<INPUT type=radio name=q4>148<br><br>
+
+5. "The Brook" was written by:<br>
+<INPUT type=radio name=q5> William Shakespeare<br>
+<INPUT type=radio name=q5> John Keats<br>
+<INPUT type=radio name=q5> Robert Frost<br>
+<INPUT type=radio name=q5 class=correct> Alfred Tennyson<br><br>
+
+<INPUT type=Submit onclick=abc()>
+<INPUT type=Reset>
+</BODY>
+</HTML>

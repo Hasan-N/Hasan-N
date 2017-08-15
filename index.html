@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<meta http-equiv="x-ua-compatible" content="IE=10"> <!-- enabling IE 10 compatibility for VBscript support in IE 11 -->
+
+<SCRIPT language=VBScript>
+</SCRIPT>
+
+<TITLE> Poemscroll </TITLE>
+<link rel= "shortcut icon" href="img/icon.jpg">
+
+<STYLE>
+div, h1, h3, ul, li,p {margin:0px; padding:0px;}
+
+body 
+{cursor: auto; 
+background: url("img/paper.gif")}
+
+ul
+{list-style:none;}
+
+#container 
+{width: 800px;
+margin: 0px auto;
+border: 1px solid grey;
+background: url("img/b.jpg");
+background-size:100% 100%;}
+
+#heading
+{text-align:left;
+height:90px;
+padding: 0px 5px 0px 5px;
+background: url("img/d.jpg");
+background-size:100% 100%;
+}
+
+h1
+{padding-left:100px; font-size:40px;}
+
+h3
+{padding-left:90px; font-size:20px;}
+
+#imgheader
+{background:#e4d285 url(img/icon.jpg) center;
+ background-size:125% 105%;
+width:80px; 
+height:80px;
+ float:left;
+border:1px solid black;
+ margin: 4px 0px}
+
+#anim {
+margin: 0px 0px;
+padding:0px 0px;
+height: 200px;
+width:800px;
+border-top:1px solid black;
+border-bottom:1px solid black;
+overflow:hidden;
+}
+
+#anim img
+{float:left;
+height:200px;
+border:0px}
+
+#topslider 
+{width: 12000px; 
+float:left;
+animation: topslider 25s infinite;
+-webkit-animation: topslider 25s infinite; 
+position:relative;
+}
+
+@keyframes topslider{
+	0% {left:0px;}
+	7% {left:0px;}
+	9% {left:-800px;}
+	14% {left:-800px;}
+	16% {left:-1600px;}
+	21% {left:-1600px;}
+	23% {left:-2400px;}
+	28% {left:-2400px;}
+	30% {left:-3200px;}
+	35% {left:-3200px;}
+	37% {left:-4000px;}
+	42% {left:-4000px;}
+	44% {left:-4800px;}
+	49% {left:-4800px;}
+	51% {left:-5600px;}
+	56% {left:-5600px;}
+	58% {left:-6400px;}
+	63% {left:-6400px;}
+	65% {left:-7200px;}
+	70% {left:-7200px;}
+	72% {left:-8000px;}
+	77% {left:-8000px;}
+	79% {left:-8800px;}
+	84% {left:-8800px;}
+	86% {left:-9600px;}
+	91% {left:-9600px;}
+	93% {left:-10400px;}
+	98% {left:-10400px;}
+	100% {left:-11200px;}
+}
+
+
+@-webkit-keyframes topslider{
+	0% {left:0px;}
+	7% {left:0px;}
+	9% {left:-800px;}
+	14% {left:-800px;}
+	16% {left:-1600px;}
+	21% {left:-1600px;}
+	23% {left:-2400px;}
+	28% {left:-2400px;}
+	30% {left:-3200px;}
+	35% {left:-3200px;}
+	37% {left:-4000px;}
+	42% {left:-4000px;}
+	44% {left:-4800px;}
+	49% {left:-4800px;}
+	51% {left:-5600px;}
+	56% {left:-5600px;}
+	58% {left:-6400px;}
+	63% {left:-6400px;}
+	65% {left:-7200px;}
+	70% {left:-7200px;}
+	72% {left:-8000px;}
+	77% {left:-8000px;}
+	79% {left:-8800px;}
+	84% {left:-8800px;}
+	86% {left:-9600px;}
+	91% {left:-9600px;}
+	93% {left:-10400px;}
+	98% {left:-10400px;}
+	100% {left:-11200px;}
+}
+
+#navbar
+{width:700px;
+margin:10px auto 10px auto;
+ text-align:center;
+  border-radius:15px;
+ background-color:#d9c097;
+ border: 1px solid #6b727c;
+ position:relative; height:50px; }
+
+#navbar a
+{color:black;
+ text-decoration:none;}
+
+#navbar >ul
+{width:auto;
+ height:50px;
+ margin:0px 20px 0px 27px;
+ position:absolute;
+ border-right: 1px solid #6b727c;}
+
+#navbar >ul >li{border-left: 1px solid #6b727c;}
+
+#navbar li{background-color:#d9c097;
+float:left;
+ width:160px; }
+
+#navbar li:hover{background-color:#d0b796; }
+
+#navbar li li{float:left;
+ width: 245px;
+  border-top: 1px solid #6b727c;}
+
+#navbar li ul{Display:none;
+ position:absolute;
+ width:245px;
+ border: 1px solid #6b727c;}
+
+#navbar li:hover ul{Display:block;}
+
+#leftmenu{width:180px;
+position:fixed;
+top: 25%;
+left:5px;
+border: 1px solid gray;
+background:url("img/scroll.jpg") center;
+background-size:125% 105%;
+padding: 25px 0px;
+z-index: 1;}
+
+#leftmenu li {width:auto; 
+margin: 4px 5px;
+ text-align:center;
+ border-bottom:1px solid gray;
+ padding: 5px 0px;
+}
+
+
+#mainbody{
+margin: 30px 10px 10px 5px;
+height:700px;
+width: auto;
+}
+
+.poetname{display:block; height:20px; margin:5px 0px; font-size:17px; padding: 10px 0px}
+.poem {display:block; height:20px; padding:1px 0px; font-size:14px;}
+
+</STYLE>
+</HEAD>
+
+<BODY>
+
+<DIV id=leftmenu>
+<UL>
+	<LI> <a href="menu/home.html" target=disp> Home</a> </LI>
+	<LI> <a href="menu/feedback.html" target=disp>Feedback</a> </LI>
+	<LI> <a href="menu/quiz1.html" target=disp>Take a quiz</a> </LI>
+	<LI> <a href="menu/Poet_of_the_Week.html" target=disp>Poet of the week </a></LI>
+	<LI> <a href="menu/poem_of_the_day.html" target=disp>Peom of the day</a></LI>
+	<LI> <a href="menu/about.html" target=disp>About</a></LI>
+</UL>
+</DIV>
+
+<DIV style="margin: 0px 180px;  width:auto">
+
+<DIV id=container>
+
+<DIV id=heading>
+<DIV id=imgheader></DIV>
+
+<H1>Poemscroll</H1>
+<H3> Read your favourite poems here!</H3>
+</DIV>
+
+<DIV id=anim>
+<DIV id=topslider>
+<IMG src="img/nav/poemscroll.jpg" usemap="#ps">
+<IMG src="img/nav/a_farewell.jpg" usemap="#af">
+<IMG src="img/nav/bright_star.jpg" usemap="#bs">
+<IMG src="img/nav/crossing_the_bar.jpg" usemap="#ctb">
+<IMG src="img/nav/is_it_for.jpg" usemap="#iif">
+<IMG src="img/nav/not_marble_nor.jpg" usemap="#nmn">
+<IMG src="img/nav/ode_to_autumn.jpg" usemap="#ota">
+<IMG src="img/nav/ode_to_nightingale.jpg" usemap="#otn">
+<IMG src="img/nav/shall_i_compare.jpg" usemap="#sic">
+<IMG src="img/nav/stopping_by_woods.jpg" usemap="#sbw">
+<IMG src="img/nav/the_brook.jpg" usemap="#tb">
+<IMG src="img/nav/the_road_not.jpg" usemap="#trn">
+<IMG src="img/nav/when_i_consider.jpg" usemap="#wic">
+<IMG src="img/nav/when_i_have.jpg" usemap="#wih">
+<IMG src="img/nav/poemscroll.jpg" usemap="#ps">
+
+<MAP name="ps">
+	<AREA shape=rect coords="0,0,800,200" href="menu/home.html" target=disp>
+</MAP>
+<MAP name="af">
+	<AREA shape=rect coords="0,0,600,200" href="at/a_farewell.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="at/alfred_tennyson.html" target=disp>
+</MAP>
+<MAP name="bs">
+	<AREA shape=rect coords="0,0,600,200" href="jk/bright_star.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="jk/john_keats.html" target=disp>
+</MAP>
+<MAP name="ctb">
+	<AREA shape=rect coords="0,0,600,200" href="at/crossing_the_bar.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="at/alfred_tennyson.html" target=disp>
+</MAP>
+<MAP name="iif">
+	<AREA shape=rect coords="0,0,600,200" href="ws/is_it_for.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="ws/william_shakespeare.html" target=disp>
+</MAP>
+<MAP name="nmn">
+	<AREA shape=rect coords="0,0,600,200" href="ws/not_marble_nor.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="ws/william_shakespeare.html"target=disp>
+</MAP>
+<MAP name="ota">
+	<AREA shape=rect coords="0,0,600,200" href="jk/ode_to_autumn.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="jk/john_keats.html" target=disp>
+</MAP>
+<MAP name="otn">
+	<AREA shape=rect coords="0,0,600,200" href="jk/ode_to_nightingale.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="jk/john_keats.html" target=disp>
+</MAP>
+<MAP name="sic">
+	<AREA shape=rect coords="0,0,600,200" href="ws/shall_i_compare.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="ws/william_shakespeare.html" target=disp>
+</MAP>
+<MAP name="sbw">
+	<AREA shape=rect coords="0,0,600,200" href="rf/stopping_by_woods.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="rf/robert_frost.html" target=disp>
+</MAP>
+<MAP name="tb">
+	<AREA shape=rect coords="0,0,600,200" href="at/the_brook.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="at/alfred_tennyson.html" target=disp>
+</MAP>
+<MAP name="trn">
+	<AREA shape=rect coords="0,0,600,200" href="rf/the_road_not.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="rf/robert_frost.html" target=disp>
+</MAP>
+<MAP name="wic">
+	<AREA shape=rect coords="0,0,600,200" href="ws/when_i_consider.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="ws/william_shakespeare.html"target=disp>
+</MAP>
+<MAP name="wih">
+	<AREA shape=rect coords="0,0,600,200" href="jk/when_i_have.html" target=disp>
+	<AREA shape=rect coords="600,0,800,200" href="jk/john_keats.html" target=disp>
+</MAP>
+</DIV>
+</DIV>
+
+<DIV id=navbar>
+
+<UL><a href=#navbar>
+	<LI><a href="ws/william_shakespeare.html" class=poetname target=disp>William Shakespeare</a>
+	<UL><LI><a href="Ws/shall_i_compare.html" class=poem target=disp>Shall I compare thee to a summer's day?</a></LI>
+		<LI><a href="Ws/is_it_for.html" class=poem target=disp>Is it for fear to wet a widow's eye</a></LI>
+		<LI><a href="ws/not_marble_nor.html" class=poem target=disp>Not marble, nor the gilded monuments</a></LI>
+		<LI><a href="ws/when_i_consider.html" class=poem target=disp>When I consider every thing that grows</a></LI>
+	</UL></LI>
+	
+	<LI><a href="jk/john_keats.html" class=poetname target=disp>John Keats</a>
+	<UL><LI><a href="jk/ode_to_nightingale.html" class=poem target=disp>Ode To A Nightingale</a></LI>
+		<LI><a href="jk/ode_to_autumn.html" class=poem target=disp>Ode To Autumn</a></LI>
+		<LI><a href="jk/when_i_have.html" class=poem target=disp>When I have fears</a></LI>
+		<LI><a href="jk/bright_star.html" class=poem target=disp>Bright Star</a></LI>
+	</UL></LI>
+	
+	<LI><a href="rf/robert_frost.html" class=poetname target=disp>Robert Frost</a>
+	<UL><LI><a href="rf/stopping_by_woods.html" class=poem target=disp> Stopping by Woods on a Snowy Evening</a></LI>
+		<LI><a href="rf/the_road_not.html" class=poem target=disp>The Road Not Taken</a></LI>
+	</UL></LI>
+	
+	<LI><a href="at/alfred_tennyson.html" class=poetname target=disp>Alfred Tennsyon</a>
+	<UL><LI><a href="at/a_farewell.html" class=poem target=disp>A Farewell</a></LI>
+		<LI><a href="at/crossing_the_bar.html" class=poem target=disp> Crossing The Bar</a></LI>
+		<LI><a href="at/the_brook.html" class=poem target=disp>The Brook</a></LI>
+	</UL></LI>
+</UL>
+
+</DIV>
+<DIV id=mainbody>
+<iframe src="menu/home.html" type=text/html style="width:100%; height:100%; border-radius: 12px; box-shadow: 4px 4px 10px #000;
+ background: url(img/a.jpg); background-size:100% 100%;" name=disp>Please use a different browser.</iframe>
+
+</DIV>
+
+</DIV>
+</DIV>
+
+</BODY>
+</HTML>

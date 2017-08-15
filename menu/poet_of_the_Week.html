@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<meta http-equiv="x-ua-compatible" content="IE=10">
+<SCRIPT language=VBScript>
+Sub abc()
+a=(day(date))
+b=a\7
+If b=0 then
+document.write("<embed src=../ws/william_shakespeare.html height=100% width=100%>")
+
+elseif b=1 then
+document.write("<embed src=../jk/john_keats.html height=100% width=100%>")
+
+elseif b=2 then
+document.write("<embed src=../rf/robert_frost.html height=100% width=100%>")
+
+else
+document.write("<embed src=../at/alfred_tennyson.html height=100% width=100%>")
+End if
+End Sub
+</SCRIPT>
+</HEAD>
+<BODY onload=abc()>
+<CENTER><H1>
+Please use Internet Explorer and/or allow blocked content (scripts). 
+</H1></CENTER>
+</BODY>
+</HTML>

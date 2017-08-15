@@ -1,0 +1,9 @@
+img{box-shadow: 5px 5px 10px black; height:200px; width:200px; transition: 1.8s; margin: 10 0 10 0;}
+
+img:hover{box-shadow: 20px 20px 15px gray; height:220px; width:220px; margin: 0 0 0 0}
+
+h1{font-size: 28px; font-family:lucida calligraphy, georgia, arial;  color: blue; text-shadow: 5px 5px 10px gray;}
+h3{font-size: 18px; font-family:calibri, corbel, lucida bright, arial;}
+p{font-size: 16px; font-family:corbel, constantia;}
+ul{list-style: inside url(img/book.gif); }
+a{text-decoration:none;}
